@@ -5,11 +5,6 @@
     <meta name="viewport" content="width=400">
 
 
-
-<script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
-
-
-
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
 <!-- Optional theme -->
@@ -47,31 +42,6 @@ Share with 15 Friends</a>
         <br><br>
         <div style="color: green; font-size:17px;">If you do not get money within 3 hours then visit <a href="http://www.devopsrider.com">here</a> to get solution.</div>
 </div>
-
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- shareWinningtop -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-6266227678201857"
-     data-ad-slot="1176810480"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
-
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- shareWinningBottom -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-6266227678201857"
-     data-ad-slot="7843410741"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
 
 </center>
 
