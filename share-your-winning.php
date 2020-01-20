@@ -6,7 +6,6 @@
 
 
 
-<script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
 
 
 
@@ -38,40 +37,20 @@ $priceValue = @$_POST['priceValue'];
 <img src="https://img.icons8.com/color/144/000000/paytm.png" style="width:100px;">
 
 <div id="showShareMssg" class="hidde">
-        <div style="padding:10px; color: green; font-size:20px;">Thanks <?php echo $nameValue; ?> ! we have got your Paytm number <?php echo $numberValue; ?>. Please share your winning with 15 friends to get Rs.<?php echo $priceValue; ?>/-</div>
+        <div style="padding:10px; color: green; font-size:20px;">Thanks <?php echo $nameValue; ?> ! we have got your Paytm number <?php echo $numberValue; ?>. Please share your winning with 5 friends to get Rs.<?php echo $priceValue; ?>/-</div>
         <br>
         <span style="color: red; font-size:17px;"><b>Note: </b></span>If you do not share with friends, you will not get winning amount.
         <br><br><br>
         <a class="btn btn-lg btn-success" href="<?php echo "whatsapp://send?text=Are mere ko scratch card se Rs. ".$priceValue." paytm cashback mila hai. Mane aapko bhi ek scratch card bheja hai. click https://bit.ly/3a6NWX6"; ?>" data-action="share/whatsapp/share"><i class="fa fa-whatsapp" aria-hidden="true"></i>
-Share with 15 Friends</a>
+Share with 5 Friends</a>
         <br><br>
-        <div style="color: green; font-size:17px;">If you do not get money within 3 hours then visit <a href="http://www.devopsrider.com">here</a> to get solution.</div>
+Once your friends open their scratch card, you will get paytm cashback.
+        <div style="color: ; font-size:17px;">Please refresh and wait for 2 minutes. If you do not get cashback within 2 hours then visit <a href="http://www.devopsrider.com">here</a> to get solution.</div>
+<div>Scroll for more details. <a>terms and conditions apply.</a></div>
+<br>
 </div>
 
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- shareWinningtop -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-6266227678201857"
-     data-ad-slot="1176810480"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
 
-
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- shareWinningBottom -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-6266227678201857"
-     data-ad-slot="7843410741"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
 
 </center>
 
